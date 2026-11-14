@@ -16,12 +16,14 @@
   .btns { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; max-width: 1100px; margin: 0 auto; }
   .btns button { font-size: 15px; padding: 4px 10px; border: 1px solid #ccc; border-radius: 6px; background: #fff; cursor: pointer; }
   .btns button.on { background: #e6e6e6; }
-  footer { font-size: 13px; color: #666; margin: 16px auto 0; max-width: 900px; }
+  p.copy { font-size: 14px; font-weight: bold; color: #1a1a1a; margin: 0 auto 6px; }
+  footer { font-size: 13px; color: #1a1a1a; margin: 16px auto 0; max-width: 900px; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <h1>Cercle unitaire : l'angle ωt qui varie, en radians</h1>
+  <p class="copy">© 2026 Arnaldo S. Attallah. Tous droits réservés. Reproduction interdite sans l'autorisation écrite de l'auteur.</p>
   <p class="intro"><strong>Quand l'angle varie, c'est ωt ; quand il est arrêté, c'est φ.</strong> Cette page montre l'angle ωt qui varie, en radians : faites glisser le curseur de 0 à 2π rad et regardez les six fonctions changer. Rappel : 2π rad = 360°, et 1 rad ≈ 57,3°. Pour l'angle arrêté φ, en degrés, ouvrez la <a href="https://arnaldo-attallah.github.io/Cercle_unitaire_degres_phi/">version en degrés (φ)</a>.</p>
   <svg id="fig" viewBox="0 30 970 545" role="img" aria-label="Cercle unitaire"></svg>
   <div class="ctrl">
@@ -65,6 +67,7 @@
   }
   function draw(deg) {
     while (svg.firstChild) svg.removeChild(svg.firstChild);
+    el('text', { x: 8, y: 569, 'text-anchor': 'start', 'font-size': 13, fill: '#1a1a1a' }, svg, '© 2026 Arnaldo S. Attallah. Tous droits réservés.');
     var t = deg * Math.PI / 180, c = Math.cos(t), s = Math.sin(t);
     var c0 = Math.abs(c) < 1e-9, s0 = Math.abs(s) < 1e-9;
     var tn = c0 ? null : s / c, ct = s0 ? null : c / s, sc = c0 ? null : 1 / c, cs = s0 ? null : 1 / s;
