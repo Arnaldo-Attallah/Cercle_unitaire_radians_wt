@@ -4,7 +4,7 @@ Figure dynamique du cercle unitaire, pour le cours « La trigonométrie au servi
 
 - `index.html` : l'angle ωt qui varie, en radians.
 
-Quand l'angle varie, c'est ωt ; quand il est arrêté, c'est φ.
+Quand l'angle varie, c'est ωt ; quand il est arrêté, c'est ϕ.
 
 Auteur : Arnaldo S. Attallah, P.Eng. (retraité), M. Sc. (INRS Énergie)
 
