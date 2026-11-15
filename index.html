@@ -44,7 +44,7 @@
   function Y(v) { return oy - R * v; }
   function cl(v) { return Math.max(-L, Math.min(L, v)); }
   function cap(p, m) { var h = Math.hypot(p[0], p[1]); return h > m ? [p[0] * m / h, p[1] * m / h] : p; }
-  function fmt(v) { if (v === null) return 'indéfini'; if (Math.abs(v) < 5e-4) v = 0; return v.toFixed(3).replace('.', ',').replace('-', '−'); }
+  function fmt(v) { if (v === null) return 'indéfinie'; if (Math.abs(v) < 5e-4) v = 0; return v.toFixed(3).replace('.', ',').replace('-', '−'); }
   function el(tag, attrs, parent, text) {
     var e = document.createElementNS(NS, tag);
     for (var k in attrs) e.setAttribute(k, attrs[k]);
