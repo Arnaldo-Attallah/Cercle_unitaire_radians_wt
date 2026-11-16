@@ -9,3 +9,5 @@ Quand l'angle varie, c'est ωt ; quand il est arrêté, c'est ϕ.
 Auteur : Arnaldo S. Attallah, P.Eng. (retraité), M. Sc. (INRS Énergie)
 
 © 2026 Arnaldo S. Attallah. Tous droits réservés. Voir le fichier LICENSE.
+
+- `en/index.html` : English version of the page (Unit circle, angle ωt in radians).
